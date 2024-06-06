@@ -1,0 +1,16 @@
+{
+  "src": [
+    "pages/DonationPage",
+    "pages/TabPage",
+    "pages/aixinPage",
+    "pages/mePage",
+    "pages/shangxiangPage",
+    "pages/LoginPage",
+    "pages/humansPage",
+    "pages/animalsPage",
+    "pages/environmentPage",
+    "pages/toutaiPage",
+    "pages/baoPage",
+    "pages/enPage"
+  ]
+}

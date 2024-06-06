@@ -1,0 +1,75 @@
+{
+  "module": {
+    "requestPermissions":[
+      {
+        "name": "ohos.permission.INTERNET"
+      }
+    ],
+    "name": "entry",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "EntryAbility",
+    "deviceTypes": [
+      "phone"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "EntryAbility",
+        "srcEntry": "./ets/entryability/EntryAbility.ts",
+        "description": "$string:EntryAbility_desc",
+        "icon": "$media:miao",
+        "label": "$string:EntryAbility_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "meAbility1",
+        "srcEntry": "./ets/meentryability1/meEntryAbility1.ts",
+        "description": "$string:meAbility1_desc",
+        "icon": "$media:icon",
+        "label": "$string:meAbility1_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background"
+      },
+      {
+        "name": "meEntryAbility1",
+        "srcEntry": "./ets/meentryability1/meEntryAbility1.ts",
+        "description": "$string:meEntryAbility1_desc",
+        "icon": "$media:icon",
+        "label": "$string:meEntryAbility1_label",
+        "startWindowIcon": "$media:icon",
+        "startWindowBackground": "$color:start_window_background"
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "EntryFormAbility",
+        "srcEntry": "./ets/entryformability/EntryFormAbility.ts",
+        "label": "$string:EntryFormAbility_label",
+        "description": "$string:EntryFormAbility_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      }
+    ]
+
+  }
+}
